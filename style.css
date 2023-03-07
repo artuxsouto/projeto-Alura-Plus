@@ -1,8 +1,11 @@
 :root {
     --cor-primaria: #FFFFFF;
-    --cor-secundaria: #C0C0C0;
-    --cor-terciaria: #167BF7;
-    --cor-de-fundo: #00030C;
+    --cor-secundaria: #609966;
+    --cor-terciaria: #0E8388;
+    --cor-de-fundo: #2C3333;
+    --cor-mouse-encima: #DF2E38;
+    --cor-quando-clica: #16FF00;
+    --cor-de-efeito: #CBE4DE;
 
     --fonte-principal: 'Inter', sans-serif;
 }
@@ -121,6 +124,7 @@ body {
 
 .rodape {
     text-align: center;
+    margin: 5em 3em;
 }
 
 .rodape__logo {
@@ -131,18 +135,30 @@ body {
     display: flex;
     justify-content: center;
     list-style-type: none;
-}
-
-.lista__link {
-    padding: 0 1rem 1.5rem;
+    margin-top: 1em;
 }
 
 .lista__link a {
     text-decoration: none;
     color: var(--cor-primaria);
+    margin-left: 1em;
+}
+
+.lista__link a:hover {
+    color: var(--cor-mouse-encima);
+}
+
+.lista__link a:active {
+    color: var(--cor-quando-clica);
+}
+
+.container__botao:hover {
+    background-color: var(--cor-de-efeito);
+    color: var(--cor-de-fundo);
 }
 
 .rodape__texto {
-    padding: 0 0 1rem;
+    margin: 1em 0;
     color: var(--cor-secundaria);
+    font-size: 14px;
 }
